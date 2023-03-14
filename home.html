@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/calendar.css" /
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <!-- Start your project here-->
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: slateblue; color: white;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="home.html">
+        <i class="far fa-2x fa-clock" style="color: white;"></i>
+      </a>
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Notifications -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Config.html">
+            <i class="fas fa-2x fa-cog" style="color: white;"></i>
+          </a>
+        </li>
+        <!-- Icon dropdown -->
+      </ul>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="45"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="Profile.html">Mi Perfil</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="index.html">Salir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+
+<div class="row">
+  <div class="col-2">
+    <div class="list-group list-group-light" id="list-tab" role="tablist">
+
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-messages-list"
+        data-mdb-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Alarmas</a>
+
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-profile-list"
+        data-mdb-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Calendario</a>
+      
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+        data-mdb-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Reportes</a>
+    </div>
+  </div>
+  
+  <div class="col-12" class="position-relative">
+    <div class="tab-content " id="nav-tabContent">
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        <div class=" container col-md-8 ">
+          <!-- Pills navs -->
+          <table id="calendar">
+            <caption>Marzo 2023</caption>
+            <tr class="weekdays">
+              <th scope="col">Sunday</th>
+              <th scope="col">Monday</th>
+              <th scope="col">Tuesday</th>
+              <th scope="col">Wednesday</th>
+              <th scope="col">Thursday</th>
+              <th scope="col">Friday</th>
+              <th scope="col">Saturday</th>
+            </tr>
+          
+            <tr class="days">
+              <td class="day other-month">
+                <div class="date">27</div>
+              </td>
+              <td class="day other-month">
+                <div class="date">28</div>
+                <div class="event">
+                  <div class="event-desc">
+                    HTML 5 lecture with Brad Traversy from Eduonix
+                  </div>
+                  <div class="event-time">
+                    1:00pm to 3:00pm
+                  </div>
+                </div>
+              </td>
+              <td class="day other-month">
+                <div class="date">29</div>
+              </td>
+              <td class="day other-month">
+                <div class="date">30</div>
+              </td>
+              <td class="day other-month">
+                <div class="date">31</div>
+              </td>
+          
+              <td class="day">
+                <div class="date">1</div>
+              </td>
+              <td class="day">
+                <div class="date">2</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Career development @ Community College room #402
+                  </div>
+          
+                  <div class="event-time">
+                    2:00pm to 5:00pm
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Test event 2
+                  </div>
+          
+                  <div class="event-time">
+                    5:00pm to 6:00pm
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="day">
+                <div class="date">3</div>
+              </td>
+              <td class="day">
+                <div class="date">4</div>
+              </td>
+              <td class="day">
+                <div class="date">5</div>
+              </td>
+              <td class="day">
+                <div class="date">6</div>
+              </td>
+              <td class="day">
+                <div class="date">7</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Group Project meetup
+                  </div>
+                  <div class="event-time">
+                    6:00pm to 8:30pm
+                  </div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="date">8</div>
+              </td>
+              <td class="day">
+                <div class="date">9</div>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+        <div class="container col-md-3">
+          <!-- Pills navs -->
+      <div></div>
+    
+
+    <!-- Pills navs -->
+
+    <!-- Pills content -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form>
+
+          <h4 class="text-center"> Listado de Alarmas </h4>
+
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Despertar</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" unchecked style="background-color: blueviolet;">
+          </div>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Tomar Agua</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" unchecked style="background-color: blueviolet;">
+          </div>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Pagar Recibos</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" unchecked style="background-color: blueviolet;">
+          </div>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Hacer Ejercicio</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" unchecked style="background-color: blueviolet;">
+          </div>
+          &nbsp;
+          &nbsp;
+          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a href="Nueva.html" class="btn-rounded btn-block mb-3" style="background-color: slateblue; color: white; text-align: center;" > Crear</a>
+            </li>
+          </ul>
+
+        </form>
+      </div>
+
+    </div>
+    <!-- Pills content -->
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+        <div class="position-absolute top-50 start-50 translate-middle container col-md-3">
+          <!-- Pills navs -->
+      <div></div>
+    
+
+    <!-- Pills navs -->
+
+    <!-- Pills content -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+       <div class="row">
+        <div class="col-6">
+          <img src="./src/img/Imagen 1.png"  alt="Responsive image">
+        </div>
+       </div>
+      </div>
+
+    </div>
+    <!-- Pills content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="position-absolute bottom-0 end-0 container-fluid">
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: dimgray; color: white;">
+    Developed By Ingesoft 2023
+    <a class="text-light" href="https://mdbootstrap.com/"</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</div>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
